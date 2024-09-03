@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="firstproj.css" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Your feedback will directly influence future updates.</p>
+  <form id="survey-form">
+    <fieldset>
+      <legend class="firstlegend">Personal Information</legend>
+      <label id="name-label">Name
+        <input id="name" type="text" required placeholder="Enter your name">
+      </label>
+      <label id="email-label">Email
+        <input id="email" type="email" required placeholder="Enter your email">
+      </label>
+      <label id="number-label">Age
+        <input id="number" type="number" placeholder="Age" max="70" min="15">
+      </label>
+      <label id="select-label">Is our website good?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+          <option value="3">Needs updates</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>how often do you visit our website</legend>
+      <label><input type="radio" name="visit-frequency" value="daily" required> Daily</label>
+      <label><input type="radio" name="visit-frequency" value="weekly"> Weekly</label>
+      <label><input type="radio" name="visit-frequency" value="monthly"> Monthly</label>
+    </fieldset>
+    <fieldset>
+    <legend> What aspects of our website do you like? </legend>
+      <label><input type="checkbox" name="likes" value="design"> Design</label>
+      <label><input type="checkbox" name="likes" value="navigation"> Navigation</label>
+      <label><input type="checkbox" name="likes" value="content"> Content</label>
+      <label><input type="checkbox" name="likes" value="speed"> Speed</label>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <label for="comments">Do you have any additional comments or suggestions?</label>
+      <textarea id="comments" name="comments" rows="5" cols="45" placeholder="Enter your comments here"></textarea>
+    </fieldset>
+    <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+body{
+      background-color: #C6E1E6;
+}
+#navbar{
+      position:fixed;
+      width :300px;
+      height:100%;
+      left:0;
+      top:0;
+      background-color:#042331;
+}
+#sidebar{
+      overflow-y: auto;
+      list-style: none;
+      height: 85%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      margin-top: 0;
+  }
+
+#nav-link{
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 20px;
+    padding-left: 20px;
+    transition: .4s;
+}
+#sidebar li{
+      border-top: 1px solid rgb(97, 97, 105);
+      border-bottom: 1.5px solid black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+#sidebar li:hover{
+      background-color: #06618b;
+      border-left: 1.5px solid #fff;
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+#navbar header{
+      padding-top:30px;
+      padding-bottom: 30px;
+      padding-left: 25px;
+      padding-right: 5px;
+      font-size: 25px;
+      font-weight: bold;
+      background-color: #063146;
+      margin:0;
+      color: white;
+}
+
+#main-doc{
+      margin-left: 350px;
+      padding-top: 30px;
+      margin-right: 10px;
+      padding-bottom:30px;
+}
+#main-doc header{
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom:25px;
+      padding-top:20px;
+}
+#main-doc h3{
+      padding-top:10px;
+      padding-bottom:10px;
+}
+code{
+      display:block;
+      background-color: #042331;
+      padding-left:10px;
+      padding-top:5px;
+      padding-bottom:5px;
+      border-radius:10px ;
+      color:#F5F5F5;
+      margin-right:20px;
+      margin-top:5px;
+      overflow-x: auto;
+}
+#exception code{
+      display: inline-block;
+      padding-right:10px;
+      padding-left:10px;
+      margin-top:5px;
+      overflow-x: auto;
+}
+@media (max-width: 768px) {
+      #main-doc {
+          flex-direction: column;
+      }
+      
+      .sidebar {
+          width: 100%;
+          position: relative;
+          height: auto;
+      }
+  
+      .main-section {
+          padding: 10px;
+      }
+      
+      /* Adjust font sizes for smaller screens */
+      header, h3, h4 {
+          font-size: 1.2em;
+      }
+  }

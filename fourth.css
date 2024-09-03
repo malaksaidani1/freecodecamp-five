@@ -1,0 +1,253 @@
+*{
+    
+    font-size: 60%;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #D1E9F6;
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 70px 25% 2fr 1fr 4.5%;
+}
+header {
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+    display: flex;
+    background: linear-gradient(to right, rgb(4, 197, 254) 35%, rgb(8, 173, 221) 45%, rgb(3, 128, 165) 100%);
+    position: fixed;
+    width: 100%;
+    left: 0; 
+    z-index: 10; 
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+#logoimg{
+    overflow: hidden;
+    margin-top: -20px;
+    width: 300px;
+    height: 90px;
+}
+#nav-bar{
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+}
+#nav-bar #nav-link{
+    text-decoration: none;
+    color:white;
+    margin-left: 25px;
+}
+#signup{
+    grid-column: 3/9;
+    grid-row: 2/3;
+    font-size: 5.5rem;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+input{
+    margin-top:15px;
+    margin-bottom: 0;
+    display:block;
+}
+input[type="email"]{
+    width:70%;
+    text-align: center;
+    height: 30px;
+}
+input[type="submit"]{
+    padding: 4px 10px;
+    background-color: rgb(3, 128, 165);
+    border-radius: 10%;
+    color:#D1E9F6;
+    border-style: none;
+}
+#signup h2{
+    text-align: center;
+    color:rgb(3, 128, 165) ;
+}
+#form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+#mainc{
+    grid-column: 3/9;
+    grid-row: 3/4;
+    margin-top: -50px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 120px;
+    column-gap: 20px;
+}
+
+i{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size:50px;
+    color:rgb(3, 128, 165)  ;
+}
+.desc{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size :3rem;
+}
+.desc h2{
+    font-size: 3.2rem;
+}
+#video{
+    display: flex;
+    justify-content: center;
+}
+#price{
+    grid-column: 2/10;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D1E9F6;
+    padding: 50px 0;
+}
+
+.pricing-card {
+    background-color: #D1E9F6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid #0d7796;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+}
+
+.pricing-card li {
+    margin-bottom: 10px;
+}
+
+.pricing-card button {
+    background-color: #67a5bc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.pricing-card button:hover {
+    background-color: #0056b3;
+}
+footer{
+    grid-column: 1/11;
+    grid-row: 5/6;
+    background-color:rgb(3, 128, 165) ;
+    padding: 7px;
+}
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+}
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    color: #444;}
+.footer  a{
+    text-decoration: none;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto auto auto auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #nav-bar {
+        margin-right: 0;
+        flex-direction: column;
+        font-size: 3rem;
+    }
+
+    #nav-bar #nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #signup {
+        grid-column: 1/2;
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    #mainc {
+        grid-column: 1/2;
+        margin-top: 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 20px;
+    }
+
+    i {
+        font-size: 40px;
+    }
+
+    .desc {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #price {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-top: 0;
+    }
+}

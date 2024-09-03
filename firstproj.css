@@ -1,0 +1,54 @@
+
+body {
+  background-size: cover;
+  background-image: url(https://th.bing.com/th/id/OIP.7LeD0lLMdIhTv-PPMRv5BgHaFL?pid=ImgDet&w=208&h=145&c=7&dpr=1.5);
+  background-repeat: no-repeat;
+  color: #ade8f4;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form {
+
+  background-color: rgba(0, 53, 102, 0.7);
+  border-radius: 15px;
+  margin:0 380px ;
+}
+
+fieldset {
+  margin: 0;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  padding-left:50px;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+}
+fieldset+fieldset{
+  margin:5px;
+}
+.firstlegend{
+padding-top: 16px;
+}
+
+
+button[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #cae9ff;
+  border:none;
+  min-width: 300px;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="thirspro.css" />
+  <title>PYTHON documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+  	<header>Python documentaion</header>
+    <ul id="sidebar">
+  	<li><a href="#Introduction" id="nav-link">Introduction</a></li>
+    <li><a href="#Getting Started" id="nav-link">Getting Started</a></li>
+    <li><a href="#Basic Concepts" id="nav-link">Basic Concepts</a></li>
+    <li><a href="#Control Structures" id="nav-link">Control Structures</a></li>
+    <li><a href="#Functions" id="nav-link">Functions</a></li>
+    <li><a href="#Data Structures" id="nav-link">Data Structures</a></li>
+    <li><a href="#Modules and Packages" id="nav-link">Modules and Packages</a></li>
+    <li><a href="#File Handling" id="nav-link">File Handling</a></li>
+    <li><a href="#Error and Exception Handling" id="nav-link" >Error and Exception Handling</a></li>
+    <li><a href="#Advanced Topics" id="nav-link">Advanced Topics</a></li>
+    <li><a href="#Libraries and Frameworks" id="nav-link">Libraries and Frameworks</a></li>
+    <li><a href="#Conclusion" id="nav-link">Conclusion</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <h3>What is Python?</h3>
+        <p>Python is a high-level, interpreted programming language known for its readability and ease of use.</p>
+        <p>Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability and a syntax that allows programmers to express concepts in fewer lines of code.</p>
+        <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+        <h3>Key Features and Advantages</h3>
+        <ul>
+            <li><strong>Readability:</strong> Clear and easy-to-read syntax.</li>
+            <li><strong>Versatility:</strong> Used in web development, data science, artificial intelligence, scientific computing, and more.</li>
+            <li><strong>Community Support:</strong> Large and active community.</li>
+            <li><strong>Extensive Libraries:</strong> A vast standard library and many third-party modules.</li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Getting Started">
+        <header>Getting Started</header>
+        <h3>Installation</h3>
+        <h4>Windows:</h4>
+        <p>To install Python on Windows, follow the steps below:</p>
+        <ol>
+            <li>Download the Python installer from the official <a href="https://www.python.org/">Python website</a>.</li>
+            <li>Run the installer and follow the instructions.</li>
+            <li>Add Python to PATH during installation.</li>
+        </ol>
+        <h4>macOS:</h4>
+        <p>To install Python on macOS, follow the steps below:</p>
+        <ol>
+            <li>Use Homebrew: <code>brew install python</code></li>
+            <li>Verify the installation with <code>python3 --version</code></li>
+        </ol>
+        <h4>Linux:</h4>
+        <p>To install Python on Linux, follow the steps below:</p>
+        <ol>
+            <li>Use the package manager: <code>sudo apt-get install python3</code></li>
+        </ol>
+        <h3>Setting up the Python Environment</h3>
+        <p><strong>IDEs:</strong> PyCharm, VSCode.</p>
+        <p><strong>Text Editors:</strong> Sublime Text, Atom.</p>
+        <p><strong>Jupyter Notebooks:</strong> Ideal for data science projects.</p>
+        <h3>Hello, World!</h3>
+        <pre><code>print("Hello, World!")</code></pre>
+        <p>To run your first program, save it in a file with a <code>.py</code> extension and execute it using the Python interpreter.</p>
+    </section>
+
+    <section class="main-section" id="Basic Concepts">
+        <header>Basic Concepts</header>
+        <h3>Variables and Data Types</h3>
+        <ul>
+            <li><strong>Variables:</strong> Containers for storing data values
+                <pre><code>x = 10
+y = "Hello"</code></pre>
+            </li>
+            <li><strong>Data Types:</strong>
+                <ul>
+                    <li><strong>Integers:</strong> Whole numbers, e.g., <code>a = 5</code></li>
+                    <li><strong>Floats:</strong> Decimal numbers, e.g., <code>b = 5.5</code></li>
+                    <li><strong>Strings:</strong> Text, e.g., <code>c = "Python"</code></li>
+                    <li><strong>Booleans:</strong> True or False, e.g., <code>d = True</code></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Operators</h3>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong> +, -, *, /, %, **, //
+                <pre><code>result = 10 + 5</code></pre>
+            </li>
+            <li><strong>Comparison Operators:</strong> ==, !=, >, <, >=, <=
+                <pre><code>is_equal = (10 == 10)</code></pre>
+            </li>
+            <li><strong>Logical Operators:</strong> and, or, not
+                <pre><code>is_true = True and False</code></pre>
+            </li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Control Structures">
+        <header>Control Structures</header>
+        <h3>Conditional Statements</h3>
+        <pre><code>if condition:
+    # code block
+elif another_condition:
+    # code block
+else:
+    # code block</code></pre>
+        <h3>Loops</h3>
+        <ul>
+            <li><strong>For loops:</strong>
+                <pre><code>for i in range(5):
+    print(i)</code></pre>
+            </li>
+            <li><strong>While loops:</strong>
+                <pre><code>while condition:
+    # code block</code></pre>
+            </li>
+            <li><strong>Loop Control:</strong>
+                <ul>
+                    <li><strong>break:</strong> Exit the loop.</li>
+                    <li><strong>continue:</strong> Skip the current iteration.</li>
+                    <li><strong>pass:</strong> Do nothing.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <h3>Defining Functions</h3>
+        <pre><code>def function_name(parameters):
+    # code block
+    return value</code></pre>
+        <p>Example:</p>
+        <pre><code>def greet(name):
+    return f"Hello, {name}"</code></pre>
+        <h3>Arguments and Parameters</h3>
+        <ul>
+            <li><strong>Positional Arguments:</strong> Passed by position
+                <pre><code>greet("Alice")</code></pre>
+            </li>
+            <li><strong>Keyword Arguments:</strong> Passed by name
+                <pre><code>greet(name="Alice")</code></pre>
+            </li>
+            <li><strong>Default Parameters:</strong>
+                <pre><code>def greet(name="Guest"):
+    return f"Hello, {name}"</code></pre>
+            </li>
+        </ul>
+        <h3>Return Values</h3>
+        <pre><code>def add(a, b):
+    return a + b</code></pre>
+        <h3>Lambda Functions</h3>
+        <pre><code>add = lambda x, y: x + y</code></pre>
+    </section>
+
+    <section class="main-section" id="Data Structures">
+        <header>Data Structures</header>
+        <h3>Lists</h3>
+        <ul>
+            <li><strong>Creating Lists:</strong>
+                <pre><code>my_list = [1, 2, 3, 4]</code></pre>
+            </li>
+            <li><strong>Manipulating Lists:</strong>
+                <pre><code>my_list.append(5)
+my_list.remove(2)</code></pre>
+            </li>
+        </ul>
+        <h3>Tuples</h3>
+        <pre><code>my_tuple = (1, 2, 3)</code></pre>
+        <h3>Dictionaries</h3>
+        <ul>
+            <li><strong>Creating Dictionaries:</strong>
+                <pre><code>my_dict = {"key1": "value1", "key2": "value2"}</code></pre>
+            </li>
+            <li><strong>Accessing Values:</strong>
+                <pre><code>value = my_dict["key1"]</code></pre>
+            </li>
+        </ul>
+        <h3>Sets</h3>
+        <pre><code>my_set = {1, 2, 3}</code></pre>
+    </section>
+
+    <section class="main-section" id="Modules and Packages">
+        <header>Modules and Packages</header>
+        <h3>Importing Modules</h3>
+        <ul>
+            <li><strong>Standard Library:</strong>
+                <pre><code>import math
+result = math.sqrt(16)</code></pre>
+            </li>
+            <li><strong>Third-Party Packages:</strong>
+                <pre><code>import numpy as np</code></pre>
+            </li>
+        </ul>
+        <h3>Creating Modules</h3>
+        <pre><code># my_module.py
+def my_function():
+    return "Hello from my module"</code></pre>
+        <h3>Virtual Environments</h3>
+        <ul>
+            <li><strong>Creating Virtual Environments:</strong>
+                <pre><code>python -m venv myenv</code></pre>
+            </li>
+            <li><strong>Activating Virtual Environments:</strong>
+                <pre><code># On Windows
+myenv\Scripts\activate
+
+# On macOS/Linux
+source myenv/bin/activate</code></pre>
+            </li>
+        </ul>
+    </section>
+    <section class="main-section" id="File Handling">
+        <header>File Handling</header>
+        <ul>
+            <li><strong>Opening Files:</strong>
+                <pre><code>file = open("filename.txt", "r")</code></pre>
+            </li>
+            <li><strong>Reading Files:</strong>
+                <pre><code>content = file.read()</code></pre>
+            </li>
+            <li><strong>Writing Files:</strong>
+                <pre><code>file = open("filename.txt", "w")
+file.write("Hello, World!")</code></pre>
+            </li>
+            <li><strong>Closing Files:</strong>
+                <pre><code>file.close()</code></pre>
+            </li>
+        </ul>
+        <h3>File Modes</h3>
+        <ul>
+            <li><code>Read (r)</code></li>
+            <li><code>Write (w)</code></li>
+            <li><code>Append (a)</code></li>
+            <li><code>Read and Write (r+)</code></li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Error and Exception Handling">
+        <header>Error and Exception Handling</header>
+        <h3>Try-Except Block</h3>
+        <pre><code>try:
+# code block
+except Exception as e:
+print(e)</code></pre>
+        <h3>Common Exceptions</h3>
+        <ul id="exception">
+            <li><code>ZeroDivisionError</code>: Division by zero.</li>
+            <li><code>ValueError</code>: Invalid value.</li>
+            <li><code>FileNotFoundError</code>: File not found.</li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Advanced Topics">
+        <header>Advanced Topics</header>
+        <h3>Decorators</h3>
+        <h4>Function Decorators:</h4>
+        <pre><code>def my_decorator(func):
+def wrapper():
+    print("Something is happening before the function is called.")
+    func()
+    print("Something is happening after the function is called.")
+return wrapper
+
+@my_decorator
+def say_hello():
+print("Hello!")</code></pre>
+        <h3>Generators</h3>
+        <h4>Yield Statement:</h4>
+        <pre><code>def my_generator():
+yield 1
+yield 2
+yield 3</code></pre>
+        <h3>Context Managers</h3>
+        <h4>With Statement:</h4>
+        <pre><code>with open("file.txt") as file:
+content = file.read()</code></pre>
+    </section>
+
+    <section class="main-section" id="Libraries and Frameworks">
+        <header>Libraries and Frameworks</header>
+        <h3>Popular Libraries</h3>
+        <ul>
+            <li><strong>Numpy:</strong>
+                <pre><code>import numpy as np
+array = np.array([1, 2, 3])</code></pre>
+            </li>
+            <li><strong>Pandas:</strong>
+                <pre><code>import pandas as pd
+df = pd.DataFrame({"A": [1, 2], "B": [3, 4]})</code></pre>
+            </li>
+            <li><strong>Matplotlib:</strong>
+                <pre><code>import matplotlib.pyplot as plt
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.show()</code></pre>
+            </li>
+        </ul>
+        <h3>Web Frameworks</h3>
+        <ul>
+            <li><strong>Django:</strong>
+                <pre><code>pip install django
+django-admin startproject mysite</code></pre>
+            </li>
+            <li><strong>Flask:</strong>
+                <pre><code>from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+return "Hello, World!"</code></pre>
+            </li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <h3>Resources</h3>
+        <ul>
+            <li><strong>Books:</strong> "Python Crash Course" by Eric Matthes, "Automate the Boring Stuff with Python" by Al Sweigart.</li>
+            <li><strong>Websites:</strong> <a href="https://www.python.org/">Python.org</a>, <a href="https://realpython.com/">Real Python</a>.</li>
+            <li><strong>Courses:</strong> Coursera, edX, Udacity.</li>
+        </ul>
+        <h3>Community</h3>
+        <ul>
+            <li><strong>Online Communities:</strong> Stack Overflow, Reddit (r/learnpython), Python Discord.</li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
